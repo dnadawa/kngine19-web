@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register-Code_com</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.png">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstraps.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/lnricons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="bg-container-contact100" style="background-image: url(images/bg-01.jpg);">
+		<div class="contact100-header flex-sb-m">
+			<a href="#" class="contact100-header-logo">
+				<img src="images/icons/logo.png" alt="LOGO">
+			</a>
+
+			<div>
+				<button class="btn-show-contact100">
+					Click Here
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<button class="btn-hide-contact100">
+				<i class="zmdi zmdi-close"></i>
+			</button>
+
+			<div class="contact100-form-title" style="background-image: url(images/bg-02.jpg);">
+				<span><img src="images/cclogo.png" width="60%" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></img></span>
+			</div>
+
+			<form class="contact100-form validate-form" method="POST" action="php/codecom.php" enctype="multipart/form-data">
+				
+				<div class="wrap-input100 validate-input">
+					<input id="name" class="input100" type="text" name="sclname" placeholder="School Name">
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="sclname">
+						<span class="lnr lnr-apartment m-b-2"></span>
+					</label>
+				</div>				
+			
+				<div class="wrap-input100 validate-input">
+					<input id="name" class="input100" type="text" name="projectname" placeholder="Project Name">
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="projectname">
+						<span class="lnr lnr-file-empty"></span>
+					</label>
+				</div>
+				<p id=bla>Competitor's Details
+				<div class="wrap-input100 validate-input">
+					<input id="name" class="input100" type="text" name="competitorname" placeholder="Competitor's Name">
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="competitorname">
+						<span class="lnr lnr-user m-b-2"></span>
+					</label>
+				</div>
+				<div class="wrap-input100 validate-input">
+					<input id="email" class="input100" type="text" name="email" placeholder="Competitor's Email">
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="email">
+					<span class="lnr lnr-envelope m-b-5"></span>
+					</label>
+				</div>
+
+				<div class="wrap-input100 validate-input">
+					<input id="phone" class="input100" type="text" name="competitorconno" placeholder="Competitor's Contact Number" maxlength="10">
+					<span class="focus-input100"></span>
+					<label class="label-input100" for="compconno">
+						<span class="lnr lnr-smartphone m-b-2"></span>
+					</label>
+				</div>
+
+
+				<p id="bla">Make zip of your project & upload it</p>
+				<div class="upload-btn-wrapper">
+
+						<input type="file" name="projfile" id="real-file" hidden="hidden"/>
+						<button type="button" class="btn" id="custom-button">Upload Your Project</button>
+						<span id="custom-text">No File Chosen</span>
+					  </div>
+
+			
+
+
+
+
+				<div class="container-contact100-form-btn">
+					<input type="submit" class="contact100-form-btn" name="regbtn"></input>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstraps.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+	
+	<script type="text/javascript">
+		const realFileBtn=document.getElementById("real-file");
+		const customBtn=document.getElementById("custom-button");
+		const customTxt=document.getElementById("custom-text");
+		
+		customBtn.addEventListener("click",function(){
+			realFileBtn.click();
+		});
+
+		realFileBtn.addEventListener("change",function(){
+			if(realFileBtn.value){
+				customTxt.innerHTML=realFileBtn.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+
+			}
+			else{
+				cusotmTxt.innerHTML="No File Chosen, Yet";
+			}
+		});
+		</script>
+</body>
+</html>
