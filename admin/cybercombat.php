@@ -12,7 +12,7 @@ $connect = mysqli_connect($hostname, $username, $password, $databaseName);
 $textfield="";
 
 
-$query = "SELECT schoolname,teamname,teamleader_name,teamleader_email,teamleader_cont FROM `cybercombat`";
+$query = "SELECT * FROM `cybercombat`";
 
 $result1=mysqli_query($connect,$query);
 
@@ -76,6 +76,14 @@ echo "<meta http-equiv='refresh' content='0;url=cybercombat.php'>";
         <th scope="col">TeamLeaderName</th>
         <th scope="col">TeamLeaderEmail</th>
         <th scope="col" width="10%">TeamLeaderContactNumber</th>
+        <th scope="col">Player_1</th>
+        <th scope="col">Contact_1</th>
+        <th scope="col">Player_2</th>
+        <th scope="col">Contact_2</th>
+        <th scope="col">Player_3</th>
+        <th scope="col">Contact_3</th>
+        <th scope="col">Player_4</th>
+        <th scope="col">Contact_4</th>
         <th scope="col"></th>
       </tr>
     </thead>
@@ -85,7 +93,15 @@ echo "<meta http-equiv='refresh' content='0;url=cybercombat.php'>";
         <td><?php echo $row1[1];?></td>
         <td><?php echo $row1[2];?></td>
         <td><?php echo $row1[3];?></td>
-        <td><?php echo $row1[4];?></td>  
+        <td><?php echo $row1[4];?></td>
+        <td><?php echo $row1[5];?></td>
+        <td><?php echo $row1[6];?></td>
+        <td><?php echo $row1[7];?></td>
+        <td><?php echo $row1[8];?></td>
+        <td><?php echo $row1[9];?></td>
+        <td><?php echo $row1[10];?></td>
+        <td><?php echo $row1[11];?></td>  
+        <td><?php echo $row1[12];?></td>
       </tr>
       <?php endwhile;?>
   </table>

@@ -49,7 +49,7 @@ if(isset($_POST['player4conno'])) {
 	$p4conno = $_POST['player4conno'];
 }
 
-
+/*
 $db =mysqli_connect("localhost", "root", "", "kngine19");
 $msg="";
 
@@ -74,6 +74,41 @@ $sql = "INSERT INTO cybercombat (schoolname,teamname,teamleader_name,teamleader_
   	else{
 		header("Location: ../thanking/Confirm Wrong.html");
 	  }
+*/
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "kngine19";
+//db=mysqli_connect("localhost","kngine19","DEtA59UZ%fW5vQ&$fU53E4W9yE!ykVDw","kngine19");
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "INSERT INTO cybercombat (schoolname,teamname,teamleader_name,teamleader_email,teamleader_cont,player1name,player1cont,player2name,player2cont,player3name,player3cont,player4name,player4cont) VALUES ('$sclname','$teamname','$leadname','$leademail','$leadconno','$p1name','$p1conno','$p2name','$p2conno','$p3name','$p3conno','$p4name','$p4conno')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
+
+
+
+
+
+
+
+
+
+
 
 }	 
 

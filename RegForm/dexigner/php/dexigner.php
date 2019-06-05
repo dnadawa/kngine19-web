@@ -35,7 +35,7 @@ $msg="";
   	$proj = $_FILES['projfile']['name'];
 
   	$target = "projects/".basename($proj);
-$sql = "INSERT INTO dexigner (schoolname,projectname,competitorname,competitoremail,contactnumber,projectfile) VALUES ('$sclname','$projname','$competitorname','$competitoremaila','$competitorconno','$proj')";
+	$sql = "INSERT INTO dexigner (schoolname,projectname,competitorname,competitoremail,contactnumber,projectfile) VALUES ('$sclname','$projname','$competitorname','$competitoremaila','$competitorconno','$proj')";
 
 
 	  // execute query

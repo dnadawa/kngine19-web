@@ -54,7 +54,8 @@ $sql = "INSERT INTO codecom (schoolname,projectname,competitorname,competitorema
 	} 
 			
   	else{
-		header("Location: ../thanking/Confirm Wrong.html");
+		//header("Location: ../thanking/Confirm Wrong.html");
+		echo "Error: " . $sql . "<br>" . mysqli_error($db);
 	  }
 
 }	 
