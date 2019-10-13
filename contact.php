@@ -32,11 +32,11 @@ Name = ".$name."\n".
 
 
 // send email
-mail("kngine19@gmail.com","Contact",$body);
+mail("sanjulahasaranga50@gmail.com","Contact me",$body);
 ?> 
 
 <script>
-alert("Message Sent!");
+alert("Message has been delivered!");
 window.location.href="index.html";
 </script>
 
