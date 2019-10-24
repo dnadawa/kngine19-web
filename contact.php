@@ -32,7 +32,7 @@ Name = ".$name."\n".
 
 
 // send email
-mail("sanjulahasaranga50@gmail.com","Contact me",$body);
+mail("sanjulahasaranga0@gmail.com","Contact me",$body);
 ?> 
 
 <script>
